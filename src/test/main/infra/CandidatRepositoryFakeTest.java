@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 public class CandidatRepositoryFakeTest {
 
     @Test
-    public void getCandidatByID() {;
+    public void getCandidatByIDFakeEtCandidat() {;
 
         //on recherche un candidat pour l'id 1
          Candidat candidat = new CandidatRepositoryFake().getCandidatByID(1);
@@ -46,7 +46,7 @@ public class CandidatRepositoryFakeTest {
     }
 
     @Test
-    public void getCandidatByID2() {;
+    public void getCandidatByIDFakeDifferents() {;
 
         //on recherche un candidat pour l'id 7
         Candidat candidat= new CandidatRepositoryFake().getCandidatByID(7);
@@ -74,7 +74,7 @@ public class CandidatRepositoryFakeTest {
     }
 
     @Test
-    public void getCandidatByID3() {;
+    public void getCandidatByID7Equivalents() {;
 
         //on recherche un candidat pour l'id 7
         Candidat candidat= new CandidatRepositoryFake().getCandidatByID(7);

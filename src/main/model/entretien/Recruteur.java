@@ -1,5 +1,7 @@
 package main.model.entretien;
 
+import java.util.Objects;
+
 public class Recruteur {
     private int id;
     private String name;
@@ -13,6 +15,24 @@ public class Recruteur {
         this.name = name;
         this.specialite = specialite;
         this.anneeExperienceEvaluation = anneeExperience;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Recruteur recruteur = (Recruteur) o;
+        return id == recruteur.id &&
+                anneeExperienceEvaluation == recruteur.anneeExperienceEvaluation &&
+                Objects.equals(name, recruteur.name) &&
+                Objects.equals(specialite, recruteur.specialite) &&
+                Objects.equals(process, recruteur.process) &&
+                Objects.equals(commentaire, recruteur.commentaire);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, specialite, process, anneeExperienceEvaluation, commentaire);
     }
 
     /**********************************************************/
