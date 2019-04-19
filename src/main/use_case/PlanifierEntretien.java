@@ -32,7 +32,7 @@ public class PlanifierEntretien {
 
         //on recupere les champs liés au recruteur demandé
         ConsultantRecruterService consultantRecruterService = new ConsultantRecruterServiceFake();
-        Recruteur recruteur = consultantRecruterService.getRecruterId(this.getIdRecruter());
+        Recruteur recruteur = consultantRecruterService.getRecruterId(this.IdRecruter);
 
         //on recupere les champs liés au candidat demandé
         CandidatRepositoryFake CandidatRepositoryFake = new CandidatRepositoryFake();
@@ -47,12 +47,6 @@ public class PlanifierEntretien {
     }
 
 
-    private Candidat getCandidatById(int IdCandidat){
-        //on recupere un objet candidat par son Id
-        Candidat candidat = new Candidat(this.IdCandidat);
-
-        return candidat;
-    }
 
     /*********************************************************************************/
 
