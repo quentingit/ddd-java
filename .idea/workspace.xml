@@ -2,19 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5e5175d-a050-44ad-b776-2e48180dd535" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/exposition/ConfirmerEntretienController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/exposition/ConfirmerEntretienController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/exposition/PlanifierEntretienController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/exposition/PlanifierEntretienController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/infra/CandidatRepositoryFake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/infra/CandidatRepositoryFake.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/infra/CandidatRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/infra/CandidatRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/infra/ConsultantRecruterServiceFake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/infra/ConsultantRecruterServiceFake.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/infra/EntretienRepositoryFake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/infra/EntretienRepositoryFake.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/infra/EntretienRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/infra/EntretienRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/entretien/Entretien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/entretien/Entretien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/use_case/CandidatRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/use_case/CandidatRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/use_case/ConfirmerEntretien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/use_case/ConfirmerEntretien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/use_case/EntretienRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/use_case/EntretienRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/use_case/PlanifierEntretien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/use_case/PlanifierEntretien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ddd_java/main/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ddd_java/main/exposition/AnnulerEntretienController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ddd_java/main/exposition/ConfirmerEntretienController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ddd_java/main/exposition/PlanifierEntretienController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ddd_java/main/exposition/ReplanifierEntretienController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ddd_java/main/infra/CandidatRepositoryFake.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ddd_java/main/infra/CandidatRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ddd_java/main/infra/ConsultantRecruterServiceFake.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ddd_java/main/infra/ConsultantRecruterServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ddd_java/main/infra/EntretienRepositoryFake.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ddd_java/main/infra/EntretienRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ddd_java/main/model/entretien/Candidat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ddd_java/main/model/entretien/Creneau.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ddd_java/main/model/entretien/Entretien$statutEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ddd_java/main/model/entretien/Entretien.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ddd_java/main/model/entretien/EntretienID.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ddd_java/main/model/entretien/Recruteur.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ddd_java/main/model/salle/Salle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ddd_java/main/use_case/AnnulerEntretien.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ddd_java/main/use_case/CandidatRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ddd_java/main/use_case/ConfirmerEntretien.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ddd_java/main/use_case/ConsultantRecruterService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ddd_java/main/use_case/EntretienRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ddd_java/main/use_case/PlanifierEntretien.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ddd_java/main/use_case/ReplanifierEntretien.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,12 +45,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/exposition/ConfirmerEntretienController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
+            <state relative-caret-position="680">
               <caret line="44" selection-start-line="44" selection-end-line="44" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#286#287#0" expanded="true" />
-                <element signature="e#313#314#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/use_case/ConfirmerEntretien.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="238">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/exposition/PlanifierEntretienController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="510">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,12 +81,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/infra/ConsultantRecruterServiceFake.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            <state relative-caret-position="289">
+              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#486#487#0" expanded="true" />
-                <element signature="e#513#514#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,8 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/infra/EntretienRepositoryImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="204">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#369#370#0" expanded="true" />
@@ -97,21 +107,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/infra/EntretienRepositoryFake.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            <state relative-caret-position="204">
+              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#943#944#0" expanded="true" />
-                <element signature="e#970#971#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/exposition/ConfirmerEntretienController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/infra/ConsultantRecruterServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="119">
               <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="12" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -125,8 +133,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/infra/CandidatRepositoryFake.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+            <state relative-caret-position="306">
+              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,7 +145,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/infra/CandidatRepositoryImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="187">
               <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -149,7 +157,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/model/entretien/Entretien.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
+            <state relative-caret-position="1751">
               <caret line="103" column="41" selection-start-line="103" selection-start-column="41" selection-end-line="103" selection-end-column="41" />
             </state>
           </provider>
@@ -203,8 +211,6 @@
         <option value="$PROJECT_DIR$/src/main/model/entretien/EntretienID.java" />
         <option value="$PROJECT_DIR$/src/test/main/exposition/PlanifierEntretienControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/model/entretien/Candidat.java" />
-        <option value="$PROJECT_DIR$/src/test/main/model/entretien/CandidatTest.java" />
-        <option value="$PROJECT_DIR$/src/test/main/model/CreneauTest.java" />
         <option value="$PROJECT_DIR$/src/test/main/infra/CandidatRepositoryFakeTest.java" />
         <option value="$PROJECT_DIR$/src/main/exposition/IdCandidat.java" />
         <option value="$PROJECT_DIR$/src/main/exposition/PlanifierEntretienController.java" />
@@ -222,7 +228,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="width" value="1581" />
     <option name="height" value="1018" />
@@ -232,8 +238,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -324,11 +328,6 @@
             <path>
               <item name="ddd-java" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="ddd-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="JUnit4" type="70bed36:NamedLibraryElementNode" />
             </path>
           </expand>
@@ -354,40 +353,25 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
-<<<<<<< HEAD
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.arquillian" />
-=======
     <property name="project.structure.side.proportion" value="0.2229885" />
->>>>>>> b240504f9422d4bb2b48e5c8608c061a1827e96f
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="main.model.entretien" />
       <recent name="main.infra" />
       <recent name="main.exposition" />
+      <recent name="main.model.entretien" />
       <recent name="main.model" />
       <recent name="" />
     </key>
-<<<<<<< HEAD
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Quentin\Desktop\ddd\ddd_java\src\test\src" />
       <recent name="C:\Users\Quentin\Desktop\ddd\ddd_java\src\test" />
       <recent name="C:\Users\Quentin\Desktop\ddd\ddd_java\src" />
-    </key>
-=======
->>>>>>> b240504f9422d4bb2b48e5c8608c061a1827e96f
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="main.use_case" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Quentin\Desktop\ddd\ddd_java\src" />
-      <recent name="C:\Users\Quentin\Desktop\ddd\ddd_java\src\model" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="main.use_case" />
@@ -412,11 +396,7 @@
       </list>
     </option>
   </component>
-<<<<<<< HEAD
-  <component name="RunManager" selected="JUnit.CreneauTest">
-=======
   <component name="RunManager" selected="JUnit.All in ddd_java">
->>>>>>> b240504f9422d4bb2b48e5c8608c061a1827e96f
     <configuration name="CandidatRepositoryFakeTest.getCandidatByID" type="AndroidJUnit" temporary="true" nameIsGenerated="true">
       <module name="ddd_java" />
       <extension name="coverage">
@@ -433,13 +413,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="AndroidJUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="12" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
+    <configuration name="EntretienTest.confirmer" type="AndroidJUnit" temporary="true" nameIsGenerated="true">
+      <module name="ddd_java" />
+      <option name="PACKAGE_NAME" value="main.model.salle.entretien" />
+      <option name="MAIN_CLASS_NAME" value="main.model.salle.entretien.EntretienTest" />
+      <option name="METHOD_NAME" value="confirmer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlanifierEntretienControllerTest" type="ArquillianJUnit" factoryName="" temporary="true" nameIsGenerated="true">
+      <module name="ddd_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.exposition.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="PACKAGE_NAME" value="main.exposition" />
+      <option name="MAIN_CLASS_NAME" value="main.exposition.PlanifierEntretienControllerTest" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -467,65 +466,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-<<<<<<< HEAD
-    <configuration name="CreneauTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-=======
-    <configuration name="All in ddd_java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ddd_java" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CandidatRepositoryFakeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
->>>>>>> b240504f9422d4bb2b48e5c8608c061a1827e96f
-      <module name="ddd_java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.model.entretien.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="main.model.entretien" />
-      <option name="MAIN_CLASS_NAME" value="main.model.entretien.CreneauTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-<<<<<<< HEAD
-    <configuration name="CreneauTest.getHeureFin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ddd_java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.model.entretien.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="main.model.entretien" />
-      <option name="MAIN_CLASS_NAME" value="main.model.entretien.CreneauTest" />
-      <option name="METHOD_NAME" value="getHeureFin" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Android JUnit.CandidatRepositoryFakeTest.getCandidatByID" />
-      <item itemvalue="JUnit.CandidatRepositoryFakeTest" />
-      <item itemvalue="JUnit.CreneauTest" />
-      <item itemvalue="JUnit.CreneauTest.getHeureFin" />
-      <item itemvalue="JUnit.All in ddd_java" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.CreneauTest" />
-        <item itemvalue="JUnit.CandidatRepositoryFakeTest" />
-        <item itemvalue="Android JUnit.CandidatRepositoryFakeTest.getCandidatByID" />
-        <item itemvalue="JUnit.All in ddd_java" />
-        <item itemvalue="JUnit.CreneauTest.getHeureFin" />
-=======
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in ddd_java" />
@@ -533,7 +473,6 @@
         <item itemvalue="JUnit.CandidatRepositoryFakeTest" />
         <item itemvalue="Arquillian JUnit.PlanifierEntretienControllerTest" />
         <item itemvalue="Android JUnit.EntretienTest.confirmer" />
->>>>>>> b240504f9422d4bb2b48e5c8608c061a1827e96f
       </list>
     </recent_temporary>
   </component>
@@ -549,51 +488,36 @@
       <updated>1555664613648</updated>
       <workItem from="1555664616347" duration="6051000" />
       <workItem from="1555672801524" duration="1601000" />
-<<<<<<< HEAD
-      <workItem from="1555674968447" duration="13391000" />
-      <workItem from="1555703188732" duration="6835000" />
-=======
       <workItem from="1555674968447" duration="13621000" />
       <workItem from="1555698532266" duration="7705000" />
->>>>>>> b240504f9422d4bb2b48e5c8608c061a1827e96f
+      <workItem from="1555714981573" duration="26000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-<<<<<<< HEAD
-    <history-entry file="CandidatRepositoryFakeTest_getCandidatByID - 2019.04.19 at 23h 01m 19s.xml">
-      <configuration name="CandidatRepositoryFakeTest.getCandidatByID" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="CandidatRepositoryFakeTest_getCandidatByID - 2019.04.19 at 23h 11m 59s.xml">
-      <configuration name="CandidatRepositoryFakeTest.getCandidatByID" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="CandidatRepositoryFakeTest - 2019.04.19 at 23h 12m 22s.xml">
-      <configuration name="CandidatRepositoryFakeTest" configurationId="JUnit" />
-=======
     <history-entry file="CandidatRepositoryFakeTest_getCandidatByID - 2019.04.19 at 17h 33m 47s.xml">
       <configuration name="CandidatRepositoryFakeTest.getCandidatByID" configurationId="AndroidJUnit" />
->>>>>>> b240504f9422d4bb2b48e5c8608c061a1827e96f
     </history-entry>
-    <history-entry file="CandidatRepositoryFakeTest - 2019.04.19 at 23h 13m 12s.xml">
-      <configuration name="CandidatRepositoryFakeTest" configurationId="JUnit" />
+    <history-entry file="CandidatRepositoryFakeTest_getCandidatByID - 2019.04.19 at 17h 34m 08s.xml">
+      <configuration name="CandidatRepositoryFakeTest.getCandidatByID" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="CandidatRepositoryFakeTest - 2019.04.19 at 23h 15m 50s.xml">
-      <configuration name="CandidatRepositoryFakeTest" configurationId="JUnit" />
+    <history-entry file="CandidatRepositoryFakeTest_getCandidatByID - 2019.04.19 at 17h 34m 21s.xml">
+      <configuration name="CandidatRepositoryFakeTest.getCandidatByID" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="CreneauTest - 2019.04.19 at 23h 26m 09s.xml">
-      <configuration name="CreneauTest" configurationId="JUnit" />
+    <history-entry file="CandidatRepositoryFakeTest_getCandidatByID - 2019.04.19 at 17h 34m 37s.xml">
+      <configuration name="CandidatRepositoryFakeTest.getCandidatByID" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="CreneauTest - 2019.04.19 at 23h 28m 56s.xml">
-      <configuration name="CreneauTest" configurationId="JUnit" />
+    <history-entry file="CandidatRepositoryFakeTest_getCandidatByID - 2019.04.19 at 17h 34m 49s.xml">
+      <configuration name="CandidatRepositoryFakeTest.getCandidatByID" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="CreneauTest - 2019.04.19 at 23h 34m 26s.xml">
-      <configuration name="CreneauTest" configurationId="JUnit" />
+    <history-entry file="CandidatRepositoryFakeTest_getCandidatByID - 2019.04.19 at 17h 35m 38s.xml">
+      <configuration name="CandidatRepositoryFakeTest.getCandidatByID" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="CreneauTest - 2019.04.19 at 23h 38m 47s.xml">
-      <configuration name="CreneauTest" configurationId="JUnit" />
+    <history-entry file="CandidatRepositoryFakeTest_getCandidatByID - 2019.04.19 at 17h 35m 54s.xml">
+      <configuration name="CandidatRepositoryFakeTest.getCandidatByID" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="CreneauTest - 2019.04.19 at 23h 43m 23s.xml">
-      <configuration name="CreneauTest" configurationId="JUnit" />
+    <history-entry file="CandidatRepositoryFakeTest_getCandidatByID - 2019.04.19 at 17h 39m 20s.xml">
+      <configuration name="CandidatRepositoryFakeTest.getCandidatByID" configurationId="AndroidJUnit" />
     </history-entry>
     <history-entry file="CandidatRepositoryFakeTest_getCandidatByID - 2019.04.19 at 17h 39m 43s.xml">
       <configuration name="CandidatRepositoryFakeTest.getCandidatByID" configurationId="AndroidJUnit" />
@@ -603,11 +527,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="27878000" />
-=======
-    <option name="totallyTimeSpent" value="28978000" />
->>>>>>> b240504f9422d4bb2b48e5c8608c061a1827e96f
+    <option name="totallyTimeSpent" value="29004000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -620,13 +540,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
-<<<<<<< HEAD
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18550107" />
-=======
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18550107" />
->>>>>>> b240504f9422d4bb2b48e5c8608c061a1827e96f
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18763326" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -635,11 +550,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-<<<<<<< HEAD
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24518201" />
-=======
       <window_info anchor="bottom" id="Run" order="2" weight="0.24593717" />
->>>>>>> b240504f9422d4bb2b48e5c8608c061a1827e96f
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -647,13 +558,9 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32869378" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-<<<<<<< HEAD
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.40042827" />
-=======
       <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.32936078" />
->>>>>>> b240504f9422d4bb2b48e5c8608c061a1827e96f
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -700,12 +607,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/model/salle/SalleRoot.java" />
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/use_case/ReplanifierEntretien.java">
-=======
     <entry file="file://$PROJECT_DIR$/src/test/main/exposition/PlanifierEntretienControllerTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/main/model/CreneauTest.java">
->>>>>>> b240504f9422d4bb2b48e5c8608c061a1827e96f
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
@@ -715,9 +618,6 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/model/entretien/Recruteur.java">
-=======
     <entry file="file://$PROJECT_DIR$/src/test/main/model/entretien/EntretienTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -726,7 +626,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/main/infra/CandidatRepositoryFakeTest.java">
->>>>>>> b240504f9422d4bb2b48e5c8608c061a1827e96f
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="481">
           <caret line="33" column="63" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
@@ -743,55 +642,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/exposition/IdCandidat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/model/entretien/EntretienID.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/model/entretien/Entretien.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/main/exposition/PlanifierEntretienControllerTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/use_case/ConfirmerEntretien.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/use_case/CandidatRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/model/entretien/Candidat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/use_case/PlanifierEntretien.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="34" column="43" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
-=======
+    <entry file="file://$PROJECT_DIR$/src/main/exposition/IdCandidat.java" />
     <entry file="file://$PROJECT_DIR$/src/main/exposition/AnnulerEntretienController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -845,24 +696,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
->>>>>>> b240504f9422d4bb2b48e5c8608c061a1827e96f
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/test/main/model/entretien/CandidatTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-=======
     <entry file="file://$PROJECT_DIR$/src/main/exposition/ReplanifierEntretienController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
->>>>>>> b240504f9422d4bb2b48e5c8608c061a1827e96f
         </state>
       </provider>
     </entry>
@@ -878,76 +721,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/exposition/ConfirmerEntretienController.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="306">
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-=======
-        <state relative-caret-position="432">
+        <state relative-caret-position="680">
           <caret line="44" selection-start-line="44" selection-end-line="44" />
->>>>>>> b240504f9422d4bb2b48e5c8608c061a1827e96f
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/test/main/infra/CandidatRepositoryFakeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="82" column="69" selection-start-line="82" selection-start-column="69" selection-end-line="82" selection-end-column="69" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/model/entretien/Entretien.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="103" column="41" selection-start-line="103" selection-start-column="41" selection-end-line="103" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/use_case/ConfirmerEntretien.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
->>>>>>> b240504f9422d4bb2b48e5c8608c061a1827e96f
+        <state relative-caret-position="238">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/infra/CandidatRepositoryFake.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="41" />
-=======
     <entry file="file://$PROJECT_DIR$/src/main/exposition/PlanifierEntretienController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="510">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/infra/ConsultantRecruterServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/infra/ConsultantRecruterServiceFake.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="12" selection-end-column="5" />
->>>>>>> b240504f9422d4bb2b48e5c8608c061a1827e96f
+        <state relative-caret-position="289">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#314#315#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/infra/EntretienRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="204">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#369#370#0" expanded="true" />
@@ -956,25 +771,31 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/infra/ConsultantRecruterServiceFake.java">
+    <entry file="file://$PROJECT_DIR$/src/main/infra/EntretienRepositoryFake.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="20" />
+        <state relative-caret-position="204">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/infra/ConsultantRecruterServiceImpl.java">
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/infra/CandidatRepositoryImpl.java">
->>>>>>> b240504f9422d4bb2b48e5c8608c061a1827e96f
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="119">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/infra/CandidatRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -982,91 +803,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/infra/EntretienRepositoryFake.java">
+    <entry file="file://$PROJECT_DIR$/src/main/model/entretien/Entretien.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/infra/EntretienRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/exposition/ReplanifierEntretienController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/exposition/PlanifierEntretienController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-=======
-        <state relative-caret-position="126">
-          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#943#944#0" expanded="true" />
-            <element signature="e#970#971#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/infra/ConsultantRecruterServiceFake.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1751">
+          <caret line="103" column="41" selection-start-line="103" selection-start-column="41" selection-end-line="103" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/infra/CandidatRepositoryFake.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
->>>>>>> b240504f9422d4bb2b48e5c8608c061a1827e96f
+        <state relative-caret-position="306">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/exposition/ConfirmerEntretienController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/exposition/AnnulerEntretienController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/model/entretien/Creneau.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="39" column="16" lean-forward="true" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/main/model/entretien/CreneauTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="101" column="55" selection-start-line="101" selection-start-column="55" selection-end-line="101" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -1075,7 +825,6 @@
     <states>
       <state key="ArquillianSettingsConfigurable.UI">
         <settings>
-          <last-edited>Manual container configuration|Manual</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1122,11 +871,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-<<<<<<< HEAD
-          <last-edited>12</last-edited>
-=======
           <last-edited>1.8.0_161</last-edited>
->>>>>>> b240504f9422d4bb2b48e5c8608c061a1827e96f
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1142,11 +887,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-<<<<<<< HEAD
-                <option value="0.2" />
-=======
                 <option value="0.2229885" />
->>>>>>> b240504f9422d4bb2b48e5c8608c061a1827e96f
               </list>
             </option>
           </splitter-proportions>

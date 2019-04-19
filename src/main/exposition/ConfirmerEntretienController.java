@@ -46,7 +46,4 @@ class ConfirmerEntretienController {
         //on retourne notre objet response
         return objetResponse;
     }
-    }
-
-
 }
