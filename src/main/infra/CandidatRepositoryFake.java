@@ -18,8 +18,6 @@ public class CandidatRepositoryFake implements CandidatRepository {
 
     @Override
     public Candidat getCandidatByID(int id) {
-        
-        //FAIRE UN TRY CATCH
 
         //on recupere dans la liste les infos candidat
 

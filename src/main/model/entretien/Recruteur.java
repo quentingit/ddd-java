@@ -1,8 +1,6 @@
 package main.model.entretien;
 
 public class Recruteur {
-
-
     private int id;
     private String name;
     private String specialite;
@@ -10,12 +8,12 @@ public class Recruteur {
     private int anneeExperienceEvaluation;
     private String commentaire;
 
-
-    public Recruteur(){
-
-
+    public Recruteur(int Id, String name, String specialite, int anneeExperience){
+        this.id = Id;
+        this.name = name;
+        this.specialite = specialite;
+        this.anneeExperienceEvaluation = anneeExperience;
     }
-
 
     /**********************************************************/
 
@@ -67,9 +65,4 @@ public class Recruteur {
     public void setCommentaire(String commentaire) {
         this.commentaire = commentaire;
     }
-
-
-
-
-
 }
