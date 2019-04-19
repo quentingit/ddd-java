@@ -1,6 +1,6 @@
 public class Entretien {
 
-    private int statut;
+    private int statut = -1;
     private Creneau creneau;
     private Recruteur recruteur;
     private Candidat candidat;

@@ -1,0 +1,5 @@
+class AnnulerEntretienController {
+    public AnnulerEntretienController() {
+
+    }
+}
