@@ -1,6 +1,8 @@
+package model.entretien;
+
 public class Entretien {
 
-    private int statut = -1;
+    private int statut;
     private Creneau creneau;
     private Recruteur recruteur;
     private Candidat candidat;
@@ -10,6 +12,8 @@ public class Entretien {
     public Entretien(){
 
         System.out.println("test");
+
+
 
 
     }

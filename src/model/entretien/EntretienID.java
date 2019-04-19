@@ -1,3 +1,5 @@
+package model.entretien;
+
 public class EntretienID {
 
     private int id;
