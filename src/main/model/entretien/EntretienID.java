@@ -1,17 +1,24 @@
-package main.model;
+package main.model.entretien;
+
+import java.util.Random;
 
 public class EntretienID {
 
     private int id;
 
-
     public int getId() {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public EntretienID(){
+        Random rand = new Random();
+        this.id =  rand.nextInt(9000000) + 1000000;
     }
+
+
+
+
+
 
 
 }

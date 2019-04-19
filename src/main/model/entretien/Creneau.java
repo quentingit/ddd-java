@@ -1,4 +1,4 @@
-package main.model;
+package main.model.entretien;
 
 import java.util.Calendar;
 
