@@ -4,7 +4,7 @@ import java.util.Calendar;
 
 public class Entretien {
 
-    private statutEnum statut;
+    private statutEnum statut = statutEnum.NONPLANIFIE;
     private Creneau creneau;
     private Recruteur recruteur;
     private Candidat candidat;
@@ -70,7 +70,7 @@ public class Entretien {
 
 
 
-    public Entretien AnnulerEntretien(Candidat canditat, Recruteur recruteur, Calendar Date, int duree) {
+    public Entretien annulerEntretien(Candidat canditat, Recruteur recruteur, Calendar Date, int duree) {
         //on cree un nouvel objet entretien
         Entretien entretien= new Entretien();
 
@@ -92,14 +92,16 @@ public class Entretien {
 
 
 
-    public Entretien ReplanifierEntretien(Candidat canditat) {
+    public Entretien replanifierEntretien(Candidat canditat) {
         Entretien entretien= new Entretien();
+
+        this.statut = statutEnum.REPLANIFIE;
 
         return entretien;
     }
 
 
-    public void ConfirmerEntretien(Entretien entretien) {
+    public void confirmerEntretien(Entretien entretien) {
           //on met a jour le statut
         this.statut=statutEnum.CONFIRMER;
     }

@@ -1,27 +1,17 @@
-package main.infra;
+package main.model.entretien;
 
-import main.model.entretien.Candidat;
-import org.junit.Assert;
-import org.junit.Ignore;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
-
-public class CandidatRepositoryFakeTest {
-
+public class CandidatTest {
     @Test
-    public void getCandidatByIDFakeEtCandidat() {;
+    public void getCandidatByID() {;
 
         //on recherche un candidat pour l'id 1
-         Candidat candidat = new CandidatRepositoryFake().getCandidatByID(1);
-
-        //on creer un objet qui equivaut a candidat id=1
-       //Candidat candidat= new Candidat(1, "jean", "IOS", 5);
+        Candidat candidat = new Candidat(1, "jean", "IOS", 5);
 
         Candidat candidatEqual= new Candidat(1, "jean", "IOS", 5);
-
-
 
         int assertEquals=0;
 
@@ -46,10 +36,10 @@ public class CandidatRepositoryFakeTest {
     }
 
     @Test
-    public void getCandidatByIDFakeDifferents() {;
+    public void getCandidatByIDDifferents() {;
 
         //on recherche un candidat pour l'id 7
-        Candidat candidat= new CandidatRepositoryFake().getCandidatByID(7);
+        Candidat candidat= new Candidat(2, "henri", "JAVA", 2);
 
         //on creer un objet qui equivaut a candidat id=1
         Candidat candidatEqual= new Candidat(1, "jean", "IOS", 5);
@@ -77,7 +67,7 @@ public class CandidatRepositoryFakeTest {
     public void getCandidatByID7Equivalents() {;
 
         //on recherche un candidat pour l'id 7
-        Candidat candidat= new CandidatRepositoryFake().getCandidatByID(7);
+        Candidat candidat= new Candidat(7, "lucie", "Android", 6);
 
         //on creer un objet qui equivaut a candidat id=1
         Candidat candidatEqual= new Candidat(7, "lucie", "Android", 6);

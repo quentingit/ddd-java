@@ -1,29 +1,66 @@
 package main.model.entretien;
 
-import org.jboss.arquillian.container.test.api.Deployment;
-import org.jboss.arquillian.junit.Arquillian;
-import org.jboss.shrinkwrap.api.ShrinkWrap;
-import org.jboss.shrinkwrap.api.asset.EmptyAsset;
-import org.jboss.shrinkwrap.api.spec.JavaArchive;
 import org.junit.Test;
-import org.junit.runner.RunWith;
+
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 import static org.junit.Assert.*;
 
-@RunWith(Arquillian.class)
 public class EntretienTest {
-    @Deployment
-    public static JavaArchive createDeployment() {
-        return ShrinkWrap.create(JavaArchive.class)
-                .addClass(Entretien.class)
-                .addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml");
+
+    @Test
+    public void getStatutParDefaut() {
+        Entretien entretien = new Entretien();
+        assertEquals(entretien.getStatut(), Entretien.statutEnum.NONPLANIFIE);
     }
 
     @Test
-    public void confirmer() {
+    public void planifierEntretien() {
+        Entretien entretien = new Entretien();
+        // création candidat et recruteur
+        Candidat candidat = new Candidat(21,"Jean Arlvin","NodeJS",3);
+        Recruteur recruteur = new Recruteur(10,"Jean Michel","JAVA",10);
+        // création date
+        Calendar calendar = new GregorianCalendar(2013,1,28,13,24,56);
+        entretien.planifierEntretien(candidat,recruteur,calendar,20);
+
+        assertEquals(entretien.getStatut(),Entretien.statutEnum.PLANIFIE);
     }
 
     @Test
-    public void annuler() {
+    public void annulerEntretien() {
+        Entretien entretien = new Entretien();
+        // création candidat et recruteur
+        Candidat candidat = new Candidat(21,"Jean Arlvin","NodeJS",3);
+        Recruteur recruteur = new Recruteur(10,"Jean Michel","JAVA",10);
+        // création date
+        Calendar calendar = new GregorianCalendar(2013,1,28,13,24,56);
+        entretien.annulerEntretien(candidat,recruteur,calendar,20);
+
+        assertEquals(entretien.getStatut(),Entretien.statutEnum.REFUSEE);
+    }
+
+    @Test
+    public void replanifierEntretien() {
+        Entretien entretien = new Entretien();
+        // création candidat et recruteur
+        Candidat candidat = new Candidat(21,"Jean Arlvin","NodeJS",3);
+        entretien.replanifierEntretien(candidat);
+
+        assertEquals(entretien.getStatut(),Entretien.statutEnum.REPLANIFIE);
+    }
+
+    @Test
+    public void confirmerEntretien() {
+        Entretien entretien = new Entretien();
+        // création candidat et recruteur
+        Candidat candidat = new Candidat(21,"Jean Arlvin","NodeJS",3);
+        Recruteur recruteur = new Recruteur(10,"Jean Michel","JAVA",10);
+        // création date
+        Calendar calendar = new GregorianCalendar(2013,1,28,13,24,56);
+        entretien.confirmerEntretien(entretien);
+
+        assertEquals(entretien.getStatut(),Entretien.statutEnum.CONFIRMER);
     }
 }

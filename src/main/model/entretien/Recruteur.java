@@ -1,8 +1,8 @@
 package main.model.entretien;
 
+import java.util.Objects;
+
 public class Recruteur {
-
-
     private int id;
     private String name;
     private String specialite;
@@ -10,12 +10,30 @@ public class Recruteur {
     private int anneeExperienceEvaluation;
     private String commentaire;
 
-
-    public Recruteur(){
-
-
+    public Recruteur(int Id, String name, String specialite, int anneeExperience){
+        this.id = Id;
+        this.name = name;
+        this.specialite = specialite;
+        this.anneeExperienceEvaluation = anneeExperience;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Recruteur recruteur = (Recruteur) o;
+        return id == recruteur.id &&
+                anneeExperienceEvaluation == recruteur.anneeExperienceEvaluation &&
+                Objects.equals(name, recruteur.name) &&
+                Objects.equals(specialite, recruteur.specialite) &&
+                Objects.equals(process, recruteur.process) &&
+                Objects.equals(commentaire, recruteur.commentaire);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, specialite, process, anneeExperienceEvaluation, commentaire);
+    }
 
     /**********************************************************/
 
@@ -67,9 +85,4 @@ public class Recruteur {
     public void setCommentaire(String commentaire) {
         this.commentaire = commentaire;
     }
-
-
-
-
-
 }
