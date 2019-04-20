@@ -27,7 +27,7 @@ public class ConfirmerEntretien {
         this.entretien = entretienRepositoryFake.getEntretienId(this.IdEntretien);
 
         //on change ensuite le statut
-        entretien.ConfirmerEntretien(entretien);
+        entretien.confirmerEntretien(entretien);
 
         //on reinsere en base l'entretien avec le nouveau statut
         entretienRepositoryFake.setEntretien(entretien);
