@@ -15,7 +15,6 @@ public class CreneauTest {
 
     public class EntretienTest {
 
-
         @Test
         public void confirmer() {
             String resutlatTheorique = "lala";
