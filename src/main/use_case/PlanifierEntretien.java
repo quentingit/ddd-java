@@ -41,7 +41,7 @@ public class PlanifierEntretien {
         //Entree :On passe par l'agregate root Entretien en lui passant un candidat en parametre
         //Action : on planigie l'entretien
         //Sortie: on recupere alors un objet de type entretien
-        this.entretien= new Entretien().planifierEntretien(candidat, recruteur, Date, duree);
+        this.entretien = new Entretien().planifierEntretien(candidat, recruteur, Date, duree);
 
 
     }
