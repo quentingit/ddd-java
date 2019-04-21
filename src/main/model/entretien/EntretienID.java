@@ -10,11 +10,16 @@ public class EntretienID {
         return id;
     }
 
+    // si id existe pas , generation
     public EntretienID(){
         Random rand = new Random();
         this.id =  rand.nextInt(9000000) + 1000000;
     }
 
+    //si ID existe
+    public EntretienID(int Id){
+        this.id = id;
+    }
 
 
 

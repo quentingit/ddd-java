@@ -69,35 +69,30 @@ public class Entretien {
 
 
 
+    public Entretien replanifierEntretien(Entretien entretien, Candidat canditat, Recruteur recruteur, Calendar Date, int duree) {
 
-    public Entretien annulerEntretien(Candidat canditat, Recruteur recruteur, Calendar Date, int duree) {
-        //on cree un nouvel objet entretien
-        Entretien entretien= new Entretien();
+       //on recuperer l'objet entretien que l'on va modifié pour la replanification
 
-        //On génére notre objet créneau
-        this.creneau = new Creneau(Date, duree);
 
-        //on planifie pour l'objet entretient un candidat et un recruteur
-        this.candidat= canditat;
-        this.recruteur= recruteur;
+        //On peut changer la date
+        entretien.creneau = new Creneau(Date, duree);
 
-        //On genere un id unique (random) pour l'entretien
-        this.entretienID= new EntretienID();
+        //on peut aussi changer le candidat et le recruteur
+        entretien.candidat= canditat;
+        entretien.recruteur= recruteur;
 
         //on doit mettre le statut
-        this.statut=statutEnum.REFUSEE;
+        entretien.statut = statutEnum.REPLANIFIE;
 
         return entretien;
     }
 
 
+    public void annulerEntretien(Entretien entretien) {
 
-    public Entretien replanifierEntretien(Candidat canditat) {
-        Entretien entretien= new Entretien();
+        //on met a jour le statut mettre le statut
+        this.statut=statutEnum.REFUSEE;
 
-        this.statut = statutEnum.REPLANIFIE;
-
-        return entretien;
     }
 
 

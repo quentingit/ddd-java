@@ -8,14 +8,13 @@ import java.util.Calendar;
 
 class ConfirmerEntretienController {
 
-
     private Enum statut;
     private int IdRecruter;
     private int IdCandidat;
     private Calendar Date;
 
     //Constructeur pour notre objet response
-    public ConfirmerEntretienController(Entretien.statutEnum statut, int IdCandidat, int IdRecruter, Calendar Date) {
+    public ConfirmerEntretienController(Entretien.statutEnum statut,int IdEntretien, int IdCandidat, int IdRecruter, Calendar Date) {
         this.statut=statut;
         this.IdCandidat=IdCandidat;
         this.IdRecruter=IdRecruter;
@@ -36,7 +35,7 @@ class ConfirmerEntretienController {
 
         //CREER NOTRE OBJET RESPONSE en appelant le constructeur
         //on recupere le statut de notre objet entretien , ainsi que l'id de l'entretien pour le passer en parametre
-        PlanifierEntretienController objetResponse=  new PlanifierEntretienController(
+        ConfirmerEntretienController objetResponse=  new ConfirmerEntretienController(
                 entretien.getStatut(),
                 entretien.getEntretienID().getId(),
                 IdCandidat,
