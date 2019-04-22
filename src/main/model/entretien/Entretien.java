@@ -45,9 +45,6 @@ public class Entretien {
 
 
     public Entretien planifierEntretien(Candidat canditat, Recruteur recruteur, Calendar Date, int duree){
-
-
-
         //on cree un nouvel objet entretien
         Entretien entretien= new Entretien();
 
@@ -63,6 +60,8 @@ public class Entretien {
 
         //on doit mettre le statut
         this.statut=statutEnum.PLANIFIE;
+
+        System.out.println("Statut: "+getStatut());
 
         return entretien;
     }

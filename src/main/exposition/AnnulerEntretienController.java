@@ -26,7 +26,7 @@ class AnnulerEntretienController {
             this.Date=Date;
         }
 
-        public Object ConfirmerEntretienController(int IdEntretien) {
+        public AnnulerEntretienController AnnulerEntretienController(int IdEntretien) {
 
             // on cree un nouvel objet du use case Confirmer entretien
             AnnulerEntretien AnnulerEntretien= new AnnulerEntretien(IdEntretien);
@@ -40,7 +40,7 @@ class AnnulerEntretienController {
 
             //CREER NOTRE OBJET RESPONSE en appelant le constructeur
             //on recupere le statut de notre objet entretien , ainsi que l'id de l'entretien pour le passer en parametre
-            AnnulerEntretienController objetResponse=  new AnnulerEntretienController(
+            AnnulerEntretienController objetResponse =  new AnnulerEntretienController(
                     entretien.getStatut(),
                     entretien.getEntretienID().getId(),
                     IdCandidat,
