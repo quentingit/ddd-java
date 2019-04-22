@@ -2,6 +2,7 @@ package main.use_case;
 
 import main.infra.CandidatRepositoryFake;
 import main.infra.ConsultantRecruterServiceFake;
+import main.infra.EntretienRepositoryFake;
 import main.model.entretien.Candidat;
 import main.model.entretien.Entretien;
 import main.model.entretien.Recruteur;
@@ -16,7 +17,7 @@ public class PlanifierEntretien {
     private int duree;
     private int IdRecruter;
     private int IdCandidat;
-
+    private int IdEntretien;
     //Valeur de sortie
     private Entretien entretien;
 
@@ -29,7 +30,10 @@ public class PlanifierEntretien {
     }
 
     public void execute() {
-
+        //on recupere les champs liés au candidat demandé
+        EntretienRepositoryFake entretienRepositoryFake = new EntretienRepositoryFake();
+        //on donne à l'attribut objet entretien les valeurs pour la requete en base lié a à l'id
+        this.entretien = entretienRepositoryFake.getEntretienId(this.IdEntretien);
         //on recupere les champs liés au recruteur demandé
         ConsultantRecruterService consultantRecruterService = new ConsultantRecruterServiceFake();
         Recruteur recruteur = consultantRecruterService.getRecruterId(this.IdRecruter);
@@ -41,9 +45,7 @@ public class PlanifierEntretien {
         //Entree :On passe par l'agregate root Entretien en lui passant un candidat en parametre
         //Action : on planigie l'entretien
         //Sortie: on recupere alors un objet de type entretien
-        this.entretien = new Entretien().planifierEntretien(candidat, recruteur, Date, duree);
-
-
+        entretien.planifierEntretien(candidat, recruteur, Date, duree);
     }
 
 

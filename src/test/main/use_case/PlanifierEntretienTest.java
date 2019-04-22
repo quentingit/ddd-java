@@ -12,7 +12,6 @@ import static org.junit.Assert.*;
 public class PlanifierEntretienTest {
 
     @Test
-    @Ignore
     public void execute() {
         Calendar calendar = new GregorianCalendar(2013,1,28,13,24,56);
         PlanifierEntretien planifierEntretien = new PlanifierEntretien(calendar,20,1,1);
