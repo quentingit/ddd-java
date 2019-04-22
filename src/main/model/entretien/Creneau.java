@@ -10,9 +10,7 @@ public class Creneau {
 
     public Creneau(Calendar date, int duree){
 
-        //date.add(Calendar.HOUR_OF_DAY, 1); // adds one hour
-        //date.getTime(); // returns new date object, one hour in the future
-        //System.out.println(date.getTime());
+
         this.date = date;
         this.heureDebut =  date.get(Calendar.MINUTE)*60 + date.get(Calendar.MINUTE);
         this.heureFin = heureDebut+duree  ;
@@ -21,9 +19,7 @@ public class Creneau {
 
     public Creneau(Calendar date, int heureDebut, int heureFin){
 
-        //date.add(Calendar.HOUR_OF_DAY, 1); // adds one hour
-        //date.getTime(); // returns new date object, one hour in the future
-        //System.out.println(date.getTime());
+
         this.date = date;
         this.heureDebut =  heureDebut;
         this.heureFin = heureFin ;

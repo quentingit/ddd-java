@@ -13,7 +13,7 @@ class ConfirmerEntretienController {
     private int IdCandidat;
     private Calendar Date;
 
-    //Constructeur pour notre objet response
+
     public ConfirmerEntretienController(Entretien.statutEnum statut,int IdEntretien, int IdCandidat, int IdRecruter, Calendar Date) {
         this.statut=statut;
         this.IdCandidat=IdCandidat;
@@ -23,18 +23,11 @@ class ConfirmerEntretienController {
 
     public Object ConfirmerEntretienController(int IdEntretien) {
 
-        // on cree un nouvel objet du use case Confirmer entretien
         ConfirmerEntretien confirmerEntretien= new ConfirmerEntretien(IdEntretien);
-        // on execute le nouvel objet crée
         confirmerEntretien.execute();
 
-        //on creer un objet entretien
-        //on retourne dans cet objet un objet entretien qui remonte les couches precedentes
         Entretien entretien = confirmerEntretien.getEntretien();
 
-
-        //CREER NOTRE OBJET RESPONSE en appelant le constructeur
-        //on recupere le statut de notre objet entretien , ainsi que l'id de l'entretien pour le passer en parametre
         ConfirmerEntretienController objetResponse=  new ConfirmerEntretienController(
                 entretien.getStatut(),
                 entretien.getEntretienID().getId(),
@@ -42,7 +35,6 @@ class ConfirmerEntretienController {
                 IdRecruter,
                 Date);
 
-        //on retourne notre objet response
         return objetResponse;
     }
 }

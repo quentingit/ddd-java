@@ -7,7 +7,6 @@ public class AnnulerEntretien {
 
     private int IdEntretien;
 
-    //Valeur de sortie
     private Entretien entretien;
 
     public AnnulerEntretien(int IdEntretien) {
@@ -16,16 +15,12 @@ public class AnnulerEntretien {
     }
     public void execute() {
 
-        //on cherche dans la bdd l'entretien qui correspond à l'id
-        //on recupere les champs liés au candidat demandé
+
         EntretienRepositoryFake entretienRepositoryFake = new EntretienRepositoryFake();
-        //on donne à l'attribut objet entretien les valeurs pour la requete en base lié a à l'id
         this.entretien = entretienRepositoryFake.getEntretienId(this.IdEntretien);
 
-        //on change ensuite le statut
         entretien.annulerEntretien(entretien);
 
-        //on reinsere en base l'entretien avec le nouveau statut
         entretienRepositoryFake.setEntretien(entretien);
     }
 

@@ -21,7 +21,6 @@ class AnnulerEntretienController {
         private int IdCandidat;
         private Calendar Date;
 
-        //Constructeur pour notre objet response
         public AnnulerEntretienController(Entretien.statutEnum statut, int IdEntretien, int IdCandidat, int IdRecruter, Calendar Date) {
             this.statut=statut;
             this.IdCandidat=IdCandidat;
@@ -30,27 +29,20 @@ class AnnulerEntretienController {
             this.entretienID= new EntretienID();
         }
 
-        public AnnulerEntretien AnnulerEntretienController() {
-            AnnulerEntretien AE = new AnnulerEntretien(entretienID.getId());
-            // on cree un nouvel objet du use case Confirmer entretien
-            //Creneau creneau = new Creneau(this.Date, 0);
-            // on execute le nouvel objet crée
-            AE.execute();
+        public AnnulerEntretienController AnnulerEntretienController(int IdEntretien) {
 
-            //on creer un objet entretien
-            //on retourne dans cet objet un objet entretien qui remonte les couches precedentes
-            //Entretien entretien = AnnulerEntretien.getEntretien();
+            AnnulerEntretien AnnulerEntretien= new AnnulerEntretien(IdEntretien);
+            AnnulerEntretien.execute();
 
-            //CREER NOTRE OBJET RESPONSE en appelant le constructeur
-            //on recupere le statut de notre objet entretien , ainsi que l'id de l'entretien pour le passer en parametre
-            /*AnnulerEntretienController objetResponse =  new AnnulerEntretienController(
-                    this.entretien.getStatut(),
-                    this.entretien.getEntretienID().getId(),
-                    this.IdCandidat,
-                    this.IdRecruter,
-                    this.Date);*/
 
-            //on retourne notre objet response
-            return AE;
+            Entretien entretien = AnnulerEntretien.getEntretien();
+            AnnulerEntretienController objetResponse =  new AnnulerEntretienController(
+                    entretien.getStatut(),
+                    entretien.getEntretienID().getId(),
+                    IdCandidat,
+                    IdRecruter,
+                    Date);
+
+            return objetResponse;
     }
 }
