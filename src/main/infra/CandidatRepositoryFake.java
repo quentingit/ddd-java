@@ -5,9 +5,6 @@ import main.use_case.CandidatRepository;
 
 public class CandidatRepositoryFake implements CandidatRepository {
 
-
-
-
     //on cree notre liste de candidats
      String[][] candidats = {
             {"1", "jean", "IOS", "5"},

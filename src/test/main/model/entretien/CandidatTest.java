@@ -65,16 +65,12 @@ public class CandidatTest {
 
     @Test
     public void getCandidatByID7Equivalents() {;
-
-        //on recherche un candidat pour l'id 7
         Candidat candidat= new Candidat(7, "lucie", "Android", 6);
 
-        //on creer un objet qui equivaut a candidat id=1
         Candidat candidatEqual= new Candidat(7, "lucie", "Android", 6);
 
         int assertEquals=0;
 
-        // comparing above created Objects.
         if(candidatEqual.hashCode() == candidat.hashCode())
         {
             if(candidatEqual.equals(candidat)) {

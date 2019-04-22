@@ -5,9 +5,6 @@ import main.model.entretien.Entretien;
 
 public class AnnulerEntretien {
 
-
-
-
     private int IdEntretien;
 
     //Valeur de sortie
