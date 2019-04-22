@@ -9,10 +9,26 @@ import static org.junit.Assert.*;
 public class AnnulerEntretienTest {
 
     @Test
-    public void execute() {
+    public void AnnulerEntretienSatut() {
         AnnulerEntretien annulerEntretien = new AnnulerEntretien(1);
         annulerEntretien.execute();
 
         assertEquals(annulerEntretien.getEntretien().getStatut(),Entretien.statutEnum.REFUSEE);
+    }
+
+    @Test
+    public void AnnulerEntretienID() {
+        AnnulerEntretien annulerEntretien = new AnnulerEntretien(1);
+        annulerEntretien.execute();
+
+        assertEquals(annulerEntretien.getEntretien().getEntretienID(),1);
+    }
+
+    @Test
+    public void AnnulerEntretien() {
+        AnnulerEntretien annulerEntretien = new AnnulerEntretien(1);
+        annulerEntretien.execute();
+
+        assertEquals(annulerEntretien.getEntretien(),1);
     }
 }

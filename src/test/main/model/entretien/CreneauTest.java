@@ -11,7 +11,7 @@ public class CreneauTest {
 
     @Test
     public void getHeureFinSansDuree() {
-        // création de la date
+        
         Calendar calendar = new GregorianCalendar(2013,1,28,13,24,56);
 
         Creneau creneau = new Creneau(calendar, 0);
@@ -21,7 +21,7 @@ public class CreneauTest {
 
     @Test
     public void getHeureFinSansDuree2() {
-        // création de la date
+        
         Calendar calendar = new GregorianCalendar(2013,1,28,13,24,56);
 
         Creneau creneau = new Creneau(calendar, 0);
@@ -32,7 +32,7 @@ public class CreneauTest {
 
     @Test
     public void getHeureFinAvecDuree() {
-        // création de la date
+        
         Calendar calendar = new GregorianCalendar(2013,1,28,13,24,56);
 
         Creneau creneau = new Creneau(calendar, 30);
@@ -43,7 +43,6 @@ public class CreneauTest {
 
     @Test
     public void getHeureFinAvecDureeDeuxCreneaux() {
-        // création de la date
         Calendar calendar = new GregorianCalendar(2013,1,28,13,24,56);
 
         Creneau creneau = new Creneau(calendar, 30);
@@ -54,7 +53,6 @@ public class CreneauTest {
 
     @Test
     public void getHeuredebutIdentique() {
-        // création de la date
         Calendar calendar = new GregorianCalendar(2013,1,28,13,24,56);
 
         Creneau creneau = new Creneau(calendar, 0);
@@ -66,7 +64,7 @@ public class CreneauTest {
 
     @Test
     public void getHeureDebutDureeDifferentes() {
-        // création de la date
+
         Calendar calendar = new GregorianCalendar(2013,1,28,13,24,56);
 
         Creneau creneau = new Creneau(calendar, 0);
@@ -78,7 +76,7 @@ public class CreneauTest {
 
     @Test
     public void getHeureDebutDifferentes() {
-        // création de la date
+        
         Calendar calendar = new GregorianCalendar(2013,1,28,13,24,56);
         Calendar calendar2 = new GregorianCalendar(2012,1,28,13,24,56);
 

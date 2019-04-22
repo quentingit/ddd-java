@@ -1,6 +1,8 @@
 package main.exposition;
 
+import main.model.entretien.Creneau;
 import main.model.entretien.Entretien;
+import main.model.entretien.EntretienID;
 import main.use_case.AnnulerEntretien;
 
 
@@ -15,6 +17,7 @@ class AnnulerEntretienController {
 
         private Enum statut;
         private int IdRecruter;
+        private EntretienID entretienID;
         private int IdCandidat;
         private Calendar Date;
 
@@ -23,6 +26,7 @@ class AnnulerEntretienController {
             this.IdCandidat=IdCandidat;
             this.IdRecruter=IdRecruter;
             this.Date=Date;
+            this.entretienID= new EntretienID();
         }
 
         public AnnulerEntretienController AnnulerEntretienController(int IdEntretien) {

@@ -16,12 +16,12 @@ public class EntretienTest {
     }
 
     @Test
-    public void planifierEntretien() {
+    public void planifierEntretienStatut() {
         Entretien entretien = new Entretien();
-        // création candidat et recruteur
+
         Candidat candidat = new Candidat(21,"Jean Arlvin","NodeJS",3);
         Recruteur recruteur = new Recruteur(10,"Jean Michel","JAVA",10);
-        // création date
+
         Calendar calendar = new GregorianCalendar(2013,1,28,13,24,56);
         entretien.planifierEntretien(candidat,recruteur,calendar,20);
 
@@ -30,47 +30,36 @@ public class EntretienTest {
 
     @Test
     public void annulerEntretien() {
-        /*revoir annuler entretien*/
-
-
-            /*
         Entretien entretien = new Entretien();
-        // création candidat et recruteur
+
         Candidat candidat = new Candidat(21,"Jean Arlvin","NodeJS",3);
         Recruteur recruteur = new Recruteur(10,"Jean Michel","JAVA",10);
-        // création date
+
         Calendar calendar = new GregorianCalendar(2013,1,28,13,24,56);
         entretien.annulerEntretien(entretien);
 
         assertEquals(entretien.getStatut(),Entretien.statutEnum.REFUSEE);
-
-
-             */
     }
 
     @Test
-    public void replanifierEntretien() {
-       /*revoir replanifier entretien*/
-
-        /*
-
+    public void replanifierEntretienStatut() {
         Entretien entretien = new Entretien();
-        // création candidat et recruteur
+
         Candidat candidat = new Candidat(21,"Jean Arlvin","NodeJS",3);
-        entretien.replanifierEntretien(entretien);
+        Calendar calendar = new GregorianCalendar(2013,1,28,13,24,56);
+        Recruteur recruteur = new Recruteur(1,"Pierre-Henri","presentation",1);
+        entretien.replanifierEntretien(entretien,candidat,recruteur,calendar,20);
 
         assertEquals(entretien.getStatut(),Entretien.statutEnum.REPLANIFIE);
-
-        **/
     }
 
     @Test
-    public void confirmerEntretien() {
+    public void confirmerEntretienStatut() {
         Entretien entretien = new Entretien();
-        // création candidat et recruteur
+
         Candidat candidat = new Candidat(21,"Jean Arlvin","NodeJS",3);
         Recruteur recruteur = new Recruteur(10,"Jean Michel","JAVA",10);
-        // création date
+
         Calendar calendar = new GregorianCalendar(2013,1,28,13,24,56);
         entretien.confirmerEntretien(entretien);
 
