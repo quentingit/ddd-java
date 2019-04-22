@@ -9,14 +9,9 @@ import java.util.GregorianCalendar;
 public class EntretienRepositoryFake implements EntretienRepository {
 
 
-
-    //on cree notre liste de candidats
-
     private Calendar date;
     private int heureDebut;
     private int heureFin;
-
-
 
     String [][][] entretiens = {
                  {
@@ -55,14 +50,14 @@ public class EntretienRepositoryFake implements EntretienRepository {
                     Candidat candidat = new Candidat(Integer.parseInt(entretiens[i][4][0]), entretiens[i][4][1], entretiens[i][4][2], Integer.parseInt(entretiens[i][4][3]));
                     Recruteur recruteur = new Recruteur(Integer.parseInt(entretiens[i][3][0]), entretiens[i][3][1], entretiens[i][3][2], Integer.parseInt(entretiens[i][3][3]));
 
-                    //date a changer
+
                     Calendar calendar = new GregorianCalendar(2019,1,28,13,24);
 
                     Creneau creneau = new Creneau(calendar, Integer.parseInt(entretiens[i][2][1]), Integer.parseInt(entretiens[i][2][2]));
                     Entretien.statutEnum statut =    Entretien.statutEnum.valueOf(entretiens[i][1][0]);
 
 
-                    //on retourn enotre objet Entretien
+
                     return new Entretien(
                             statut,
                             creneau,

@@ -17,7 +17,7 @@ public class ReplanifierEntretien {
 
     private int IdEntretien;
 
-    //Valeur de sortie
+
     private Entretien entretien;
 
 
@@ -31,26 +31,19 @@ public class ReplanifierEntretien {
 
     public void execute() {
 
-        //on cherche dans la bdd l'entretie
-        // n qui correspond à l'id
-        //on recupere les champs liés au candidat demandé
+
         EntretienRepositoryFake entretienRepositoryFake = new EntretienRepositoryFake();
-        //on donne à l'attribut objet entretien les valeurs pour la requete en base lié a à l'id
         this.entretien = entretienRepositoryFake.getEntretienId(this.IdEntretien);
 
 
-        //on recupere les champs liés au recruteur demandé
         ConsultantRecruterService consultantRecruterService = new ConsultantRecruterServiceFake();
         Recruteur recruteur = consultantRecruterService.getRecruterId(this.IdRecruter);
 
 
-        //on recupere les champs liés au candidat demandé
         CandidatRepositoryFake CandidatRepositoryFake = new CandidatRepositoryFake();
         Candidat candidat = CandidatRepositoryFake.getCandidatByID(this.IdCandidat);
 
 
-        //Action : //on change ensuite l'objet avec la nouelle date, nouveau candiddat, recruteur si besoin est
-        //Sortie: on recupere alors un objet de type entretien
         entretien.replanifierEntretien(entretien, candidat, recruteur, Date, duree);
 
 
