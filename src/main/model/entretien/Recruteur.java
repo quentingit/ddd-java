@@ -38,7 +38,7 @@ public class Recruteur {
     /**********************************************************/
 
 
-    public int getRecruterId(int id) {
+    public int getRecruterId() {
         return id;
     }
 
