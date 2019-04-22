@@ -17,7 +17,7 @@ public class EntretienID {
     }
 
 
-    public EntretienID(int Id){
+    public EntretienID(int id){
         this.id = id;
     }
 

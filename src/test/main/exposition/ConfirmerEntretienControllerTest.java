@@ -8,5 +8,12 @@ public class ConfirmerEntretienControllerTest {
 
     @Test
     public void confirmerEntretienController() {
+
+
+        //notre objet clean crée
+        AnnulerEntretienController AEC =   new AnnulerEntretienController(1);
+
+
+
     }
 }

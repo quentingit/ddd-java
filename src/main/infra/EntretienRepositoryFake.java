@@ -31,31 +31,42 @@ public class EntretienRepositoryFake implements EntretienRepository {
     @Override
     public Entretien getEntretienId(int id) {
 
+
         Entretien entretien = new Entretien();
-
-
-
 
         for(int i=0;i<entretiens.length;i++){
 
 
-                EntretienID entretienId = new EntretienID(Integer.parseInt(String.valueOf(entretiens[i][0][0])));
+
+
+                EntretienID entretienId = new EntretienID(Integer.parseInt(entretiens[i][0][0]));
 
 
                 if (entretienId.getId() == id) {
 
-                    System.out.println("good"+entretienId);
-
 
                     Candidat candidat = new Candidat(Integer.parseInt(entretiens[i][4][0]), entretiens[i][4][1], entretiens[i][4][2], Integer.parseInt(entretiens[i][4][3]));
                     Recruteur recruteur = new Recruteur(Integer.parseInt(entretiens[i][3][0]), entretiens[i][3][1], entretiens[i][3][2], Integer.parseInt(entretiens[i][3][3]));
-
 
                     Calendar calendar = new GregorianCalendar(2019,1,28,13,24);
 
                     Creneau creneau = new Creneau(calendar, Integer.parseInt(entretiens[i][2][1]), Integer.parseInt(entretiens[i][2][2]));
                     Entretien.statutEnum statut =    Entretien.statutEnum.valueOf(entretiens[i][1][0]);
 
+                    /*
+
+                    System.out.println(creneau.getHeureDebut());
+                    System.out.println(creneau.getHeureFin());
+                    System.out.println(creneau.getDate());
+
+                    System.out.println(candidat.getName());
+
+                    System.out.println(recruteur.getName());
+
+                    System.out.println(statut);
+                    System.out.println(entretienId);
+
+                     */
 
 
                     return new Entretien(

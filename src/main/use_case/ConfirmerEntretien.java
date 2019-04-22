@@ -21,13 +21,10 @@ public class ConfirmerEntretien {
 
 
         EntretienRepositoryFake entretienRepositoryFake = new EntretienRepositoryFake();
-
         this.entretien = entretienRepositoryFake.getEntretienId(this.IdEntretien);
-
         entretien.confirmerEntretien(entretien);
-
-
         entretienRepositoryFake.setEntretien(entretien);
+        
     }
 
     public Entretien getEntretien() {

@@ -15,11 +15,17 @@ public class AnnulerEntretienControllerTest {
 
     @Test
     public void annulerEntretienController() {
+
+        //notre objet clean crée
+        AnnulerEntretienController AEC =   new AnnulerEntretienController(1);
+
+
+        //verifier champs par champs de l'objet
         Calendar calendar = new GregorianCalendar(2013,1,28,13,24,56);
 
-        AnnulerEntretienController AEC = new AnnulerEntretienController(Entretien.statutEnum.NONPLANIFIE, 1, 1, 1, calendar);
-        //AEC.AnnulerEntretienController();
 
         assertEquals(1, 1);
     }
 }
+
+

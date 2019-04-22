@@ -14,13 +14,9 @@ public class AnnulerEntretien {
 
     }
     public void execute() {
-
-
         EntretienRepositoryFake entretienRepositoryFake = new EntretienRepositoryFake();
         this.entretien = entretienRepositoryFake.getEntretienId(this.IdEntretien);
-
-        entretien.annulerEntretien(entretien);
-
+        this.entretien.annulerEntretien(entretien);
         entretienRepositoryFake.setEntretien(entretien);
     }
 

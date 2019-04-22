@@ -1,6 +1,7 @@
 package main.exposition;
 
 import main.model.entretien.Entretien;
+import main.use_case.AnnulerEntretien;
 import main.use_case.ConfirmerEntretien;
 import main.use_case.PlanifierEntretien;
 
@@ -10,31 +11,22 @@ class ConfirmerEntretienController {
 
     private Enum statut;
     private int IdRecruter;
+    private int entretienID;
     private int IdCandidat;
     private Calendar Date;
 
-
-    public ConfirmerEntretienController(Entretien.statutEnum statut,int IdEntretien, int IdCandidat, int IdRecruter, Calendar Date) {
-        this.statut=statut;
-        this.IdCandidat=IdCandidat;
-        this.IdRecruter=IdRecruter;
-        this.Date=Date;
-    }
-
-    public Object ConfirmerEntretienController(int IdEntretien) {
-
-        ConfirmerEntretien confirmerEntretien= new ConfirmerEntretien(IdEntretien);
+    public ConfirmerEntretienController(int IdEntretien) {
+        ConfirmerEntretien confirmerEntretien = new ConfirmerEntretien(IdEntretien);
         confirmerEntretien.execute();
 
         Entretien entretien = confirmerEntretien.getEntretien();
 
-        ConfirmerEntretienController objetResponse=  new ConfirmerEntretienController(
-                entretien.getStatut(),
-                entretien.getEntretienID().getId(),
-                IdCandidat,
-                IdRecruter,
-                Date);
+        this.statut = entretien.getStatut();
+        this.IdCandidat = entretien.getCandidat().getId();
+        this.IdRecruter = entretien.getRecruteur().getRecruterId();
+        this.Date = entretien.getCreneau().getDate();
+        this.entretienID = entretien.getEntretienID().getId();
 
-        return objetResponse;
+
     }
 }
