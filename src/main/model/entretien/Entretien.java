@@ -21,10 +21,6 @@ public class Entretien {
         CONFIRMER
     }
 
-    public Entretien(){
-
-    }
-
 
     public Entretien(statutEnum statut,
                      Creneau creneau,
@@ -45,21 +41,18 @@ public class Entretien {
 
     public Entretien planifierEntretien(Candidat canditat, Recruteur recruteur, Calendar Date, int duree){
 
-        Entretien entretien= new Entretien();
-
         this.creneau = new Creneau(Date, duree);
 
 
         this.candidat= canditat;
         this.recruteur= recruteur;
 
-
         this.entretienID= new EntretienID();
-
 
         this.statut=statutEnum.PLANIFIE;
 
-        System.out.println("Statut: "+getStatut());
+        Entretien entretien= new Entretien(this.statut,this.creneau,this.recruteur,this.candidat,this.entretienID);
+
 
         return entretien;
     }
@@ -67,8 +60,6 @@ public class Entretien {
 
 
     public Entretien replanifierEntretien(Entretien entretien, Candidat canditat, Recruteur recruteur, Calendar Date, int duree) {
-
-
 
         entretien.creneau = new Creneau(Date, duree);
 

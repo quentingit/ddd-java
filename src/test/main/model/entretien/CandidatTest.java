@@ -28,4 +28,25 @@ public class CandidatTest {
 
         assertEquals(candidatEqual.hashCode(), candidat.hashCode());
     }
+
+    @Test
+    public void getCandidatName() {;
+        Candidat candidat = new Candidat(1, "jean", "IOS", 5);
+
+        assertEquals("jean", candidat.getName());
+    }
+
+    @Test
+    public void getCandidatSpeciality() {;
+        Candidat candidat = new Candidat(1, "jean", "IOS", 5);
+
+        assertEquals("IOS", candidat.getSpecialite());
+    }
+
+    @Test
+    public void getCandidatAnneeExperience() {;
+        Candidat candidat = new Candidat(1, "jean", "IOS", 5);
+
+        assertEquals(5, candidat.getAnneeExperience());
+    }
 }
