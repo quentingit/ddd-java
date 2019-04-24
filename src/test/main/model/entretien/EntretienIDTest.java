@@ -9,7 +9,7 @@ public class EntretienIDTest {
     @Test
     public void IDGeneratedLessThan() {
         EntretienID ID = new EntretienID();
-        assertTrue(ID.getId() < 9000000 );
+        assertTrue(ID.getId() < 90000000 );
     }
 
     @Test

@@ -34,6 +34,7 @@ public class EntretienTest {
         EntretienID ID = new EntretienID();
 
         Entretien entretien = new Entretien(Entretien.statutEnum.NONPLANIFIE,creneau,recruteur,candidat,ID);
+        entretien.annulerEntretien(entretien);
 
         assertEquals(entretien.getStatut(),Entretien.statutEnum.REFUSEE);
     }
