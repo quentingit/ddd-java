@@ -83,4 +83,46 @@ public class EntretienTest {
 
         assertTrue(entretien.getEntretienID().getId() > 0);
     }
+
+    @Test
+    public void entretienCreneau() {
+        Candidat candidat = new Candidat(21,"Jean Arlvin","NodeJS",3);
+        Recruteur recruteur = new Recruteur(10,"Jean Michel","JAVA",10);
+
+        Calendar calendar = new GregorianCalendar(2013,1,28,13,24,56);
+        Creneau creneau = new Creneau(calendar,0,12);
+        EntretienID ID = new EntretienID();
+
+        Entretien entretien = new Entretien(Entretien.statutEnum.NONPLANIFIE,creneau,recruteur,candidat,ID);
+
+        assertTrue(entretien.getCreneau() == creneau);
+    }
+
+    @Test
+    public void entretienCandidat() {
+        Candidat candidat = new Candidat(21,"Jean Arlvin","NodeJS",3);
+        Recruteur recruteur = new Recruteur(10,"Jean Michel","JAVA",10);
+
+        Calendar calendar = new GregorianCalendar(2013,1,28,13,24,56);
+        Creneau creneau = new Creneau(calendar,0,12);
+        EntretienID ID = new EntretienID();
+
+        Entretien entretien = new Entretien(Entretien.statutEnum.NONPLANIFIE,creneau,recruteur,candidat,ID);
+
+        assertTrue(entretien.getCandidat() == candidat);
+    }
+
+    @Test
+    public void entretienRecruteur() {
+        Candidat candidat = new Candidat(21,"Jean Arlvin","NodeJS",3);
+        Recruteur recruteur = new Recruteur(10,"Jean Michel","JAVA",10);
+
+        Calendar calendar = new GregorianCalendar(2013,1,28,13,24,56);
+        Creneau creneau = new Creneau(calendar,0,12);
+        EntretienID ID = new EntretienID();
+
+        Entretien entretien = new Entretien(Entretien.statutEnum.NONPLANIFIE,creneau,recruteur,candidat,ID);
+
+        assertTrue(entretien.getRecruteur() == recruteur);
+    }
 }
