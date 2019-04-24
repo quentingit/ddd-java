@@ -8,6 +8,46 @@ import java.util.Calendar;
 
 class PlanifierEntretienController {
 
+    public Enum getStatut() {
+        return statut;
+    }
+
+    public void setStatut(Enum statut) {
+        this.statut = statut;
+    }
+
+    public int getIdRecruter() {
+        return IdRecruter;
+    }
+
+    public void setIdRecruter(int idRecruter) {
+        IdRecruter = idRecruter;
+    }
+
+    public int getEntretienID() {
+        return entretienID;
+    }
+
+    public void setEntretienID(int entretienID) {
+        this.entretienID = entretienID;
+    }
+
+    public int getIdCandidat() {
+        return IdCandidat;
+    }
+
+    public void setIdCandidat(int idCandidat) {
+        IdCandidat = idCandidat;
+    }
+
+    public Calendar getDate() {
+        return Date;
+    }
+
+    public void setDate(Calendar date) {
+        Date = date;
+    }
+
     private Enum statut;
     private int IdRecruter;
     private int entretienID;
@@ -16,8 +56,8 @@ class PlanifierEntretienController {
 
 
 
-    public PlanifierEntretienController(Calendar date, int duree, int IdCandidat, int IdRecruter, Calendar Date) {
-        PlanifierEntretien planifierEntretien = new PlanifierEntretien(Date, duree,  IdRecruter,IdCandidat);
+    public PlanifierEntretienController(Calendar date, int duree, int IdCandidat, int IdRecruter) {
+        PlanifierEntretien planifierEntretien = new PlanifierEntretien(date, duree,  IdRecruter,IdCandidat);
         planifierEntretien.execute();
 
         Entretien entretien = planifierEntretien.getEntretien();

@@ -7,6 +7,46 @@ import java.util.Calendar;
 
 class ReplanifierEntretienController {
 
+    public Enum getStatut() {
+        return statut;
+    }
+
+    public void setStatut(Enum statut) {
+        this.statut = statut;
+    }
+
+    public int getIdRecruter() {
+        return IdRecruter;
+    }
+
+    public void setIdRecruter(int idRecruter) {
+        IdRecruter = idRecruter;
+    }
+
+    public int getEntretienID() {
+        return entretienID;
+    }
+
+    public void setEntretienID(int entretienID) {
+        this.entretienID = entretienID;
+    }
+
+    public int getIdCandidat() {
+        return IdCandidat;
+    }
+
+    public void setIdCandidat(int idCandidat) {
+        IdCandidat = idCandidat;
+    }
+
+    public Calendar getDate() {
+        return Date;
+    }
+
+    public void setDate(Calendar date) {
+        Date = date;
+    }
+
     private Enum statut;
     private int IdRecruter;
     private int entretienID;

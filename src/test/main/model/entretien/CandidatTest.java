@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 
 public class CandidatTest {
     @Test
-    public void getCandidatByID() {;
+    public void getCandidatByID() {
         Candidat candidat = new Candidat(1, "jean", "IOS", 5);
         Candidat candidatEqual= new Candidat(1, "jean", "IOS", 5);
 
@@ -14,7 +14,7 @@ public class CandidatTest {
     }
 
     @Test
-    public void getCandidatByIDDifferents() {;
+    public void getCandidatByIDDifferents() {
         Candidat candidat= new Candidat(2, "henri", "JAVA", 2);
         Candidat candidatEqual= new Candidat(1, "jean", "IOS", 5);
 
@@ -22,7 +22,7 @@ public class CandidatTest {
     }
 
     @Test
-    public void getCandidatByID7Equivalents() {;
+    public void getCandidatByID7Equivalents() {
         Candidat candidat= new Candidat(7, "lucie", "Android", 6);
         Candidat candidatEqual= new Candidat(7, "lucie", "Android", 6);
 
@@ -30,21 +30,21 @@ public class CandidatTest {
     }
 
     @Test
-    public void getCandidatName() {;
+    public void getCandidatName() {
         Candidat candidat = new Candidat(1, "jean", "IOS", 5);
 
         assertEquals("jean", candidat.getName());
     }
 
     @Test
-    public void getCandidatSpeciality() {;
+    public void getCandidatSpeciality() {
         Candidat candidat = new Candidat(1, "jean", "IOS", 5);
 
         assertEquals("IOS", candidat.getSpecialite());
     }
 
     @Test
-    public void getCandidatAnneeExperience() {;
+    public void getCandidatAnneeExperience() {
         Candidat candidat = new Candidat(1, "jean", "IOS", 5);
 
         assertEquals(5, candidat.getAnneeExperience());
