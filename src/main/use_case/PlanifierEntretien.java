@@ -2,7 +2,6 @@ package main.use_case;
 
 import main.infra.CandidatRepositoryFake;
 import main.infra.ConsultantRecruterServiceFake;
-import main.infra.EntretienRepositoryFake;
 import main.model.entretien.Candidat;
 import main.model.entretien.Entretien;
 import main.model.entretien.Recruteur;
@@ -21,7 +20,6 @@ public class PlanifierEntretien {
 
     private Entretien entretien;
 
-
     public PlanifierEntretien(Calendar Date, int duree, int IdRecruter, int IdCandidat) {
         this.Date=Date;
         this.duree=duree;
@@ -30,26 +28,20 @@ public class PlanifierEntretien {
     }
 
     public void execute() {
-
-        EntretienRepositoryFake entretienRepositoryFake = new EntretienRepositoryFake();
-
-        this.entretien = entretienRepositoryFake.getEntretienId(this.IdEntretien);
-
         ConsultantRecruterService consultantRecruterService = new ConsultantRecruterServiceFake();
         Recruteur recruteur = consultantRecruterService.getRecruterId(this.IdRecruter);
-
 
         CandidatRepositoryFake CandidatRepositoryFake = new CandidatRepositoryFake();
         Candidat candidat = CandidatRepositoryFake.getCandidatByID(this.IdCandidat);
 
 
-        entretien.planifierEntretien(candidat, recruteur, Date, duree);
+        this.entretien = new Entretien(null, null, null, null, null);
+        this.entretien.planifierEntretien(this.entretien, candidat, recruteur, this.Date, this.duree);
+
     }
 
 
-
     /*********************************************************************************/
-
 
     public Calendar getDate() {
         return Date;

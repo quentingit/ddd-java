@@ -19,7 +19,7 @@ public class EntretienTest {
         EntretienID ID = new EntretienID();
 
         Entretien entretien = new Entretien(Entretien.statutEnum.NONPLANIFIE,creneau,recruteur,candidat,ID);
-        entretien.planifierEntretien(candidat,recruteur,calendar,20);
+        entretien.planifierEntretien(entretien, candidat,recruteur,calendar,20);
 
         assertEquals(entretien.getStatut(),Entretien.statutEnum.PLANIFIE);
     }

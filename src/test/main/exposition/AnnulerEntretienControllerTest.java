@@ -1,15 +1,11 @@
 package main.exposition;
 
-import main.model.entretien.Creneau;
-import main.model.entretien.Entretien;
-import main.use_case.AnnulerEntretien;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class AnnulerEntretienControllerTest {
 

@@ -39,49 +39,32 @@ public class Entretien {
     /**********************************************************/
 
 
-    public Entretien planifierEntretien(Candidat canditat, Recruteur recruteur, Calendar Date, int duree){
+    public Entretien planifierEntretien(Entretien entretien, Candidat canditat, Recruteur recruteur, Calendar Date, int duree){
 
-        this.creneau = new Creneau(Date, duree);
-
-
-        this.candidat= canditat;
-        this.recruteur= recruteur;
-
-        this.entretienID= new EntretienID();
-
-        this.statut=statutEnum.PLANIFIE;
-
-        Entretien entretien= new Entretien(this.statut,this.creneau,this.recruteur,this.candidat,this.entretienID);
-
-
+        entretien.creneau = new Creneau(Date, duree);
+        entretien.candidat= canditat;
+        entretien.recruteur= recruteur;
+        entretien.entretienID= new EntretienID();
+        entretien.statut=statutEnum.PLANIFIE;
         return entretien;
     }
 
 
-
     public Entretien replanifierEntretien(Entretien entretien, Candidat canditat, Recruteur recruteur, Calendar Date, int duree) {
-
         entretien.creneau = new Creneau(Date, duree);
-
         entretien.candidat= canditat;
         entretien.recruteur= recruteur;
-
-
         entretien.statut = statutEnum.REPLANIFIE;
-
         return entretien;
     }
 
 
     public void annulerEntretien(Entretien entretien) {
-
         this.statut=statutEnum.REFUSEE;
-
     }
 
 
     public void confirmerEntretien(Entretien entretien) {
-
         this.statut=statutEnum.CONFIRMER;
     }
 

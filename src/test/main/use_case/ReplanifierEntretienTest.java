@@ -6,7 +6,7 @@ import org.junit.Test;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class ReplanifierEntretienTest {
 
@@ -25,6 +25,6 @@ public class ReplanifierEntretienTest {
         ReplanifierEntretien replanifierEntretien = new ReplanifierEntretien(1,calendar,20,1,1);
         replanifierEntretien.execute();
 
-        assertEquals(replanifierEntretien.getEntretien().getEntretienID(), 1);
+        assertEquals(replanifierEntretien.getEntretien().getEntretienID().getId(), 1);
     }
 }

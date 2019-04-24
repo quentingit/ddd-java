@@ -1,10 +1,10 @@
 package main.use_case;
 
-import main.infra.EntretienRepositoryFake;
+
 import main.model.entretien.Entretien;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class ConfirmerEntretienTest {
 
@@ -13,7 +13,7 @@ public class ConfirmerEntretienTest {
         ConfirmerEntretien confirmerEntretien = new ConfirmerEntretien(1);
         confirmerEntretien.execute();
 
-        assertEquals(confirmerEntretien.getEntretien().getStatut(),Entretien.statutEnum.CONFIRMER);
+        assertEquals(confirmerEntretien.getEntretien().getStatut(), Entretien.statutEnum.CONFIRMER);
     }
 
     @Test
@@ -21,6 +21,6 @@ public class ConfirmerEntretienTest {
         ConfirmerEntretien confirmerEntretien = new ConfirmerEntretien(1);
         confirmerEntretien.execute();
 
-        assertEquals(confirmerEntretien.getEntretien().getEntretienID(),1);
+        assertEquals(confirmerEntretien.getEntretien().getEntretienID().getId(),1);
     }
 }

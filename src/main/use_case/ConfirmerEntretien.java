@@ -1,10 +1,7 @@
 package main.use_case;
 
 import main.infra.EntretienRepositoryFake;
-import main.model.entretien.Candidat;
 import main.model.entretien.Entretien;
-
-import java.util.Calendar;
 
 public class ConfirmerEntretien {
 
@@ -19,10 +16,9 @@ public class ConfirmerEntretien {
     }
     public void execute() {
 
-
         EntretienRepositoryFake entretienRepositoryFake = new EntretienRepositoryFake();
         this.entretien = entretienRepositoryFake.getEntretienId(this.IdEntretien);
-        entretien.confirmerEntretien(entretien);
+        this.entretien.confirmerEntretien(entretien);
         entretienRepositoryFake.setEntretien(entretien);
         
     }

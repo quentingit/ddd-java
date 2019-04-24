@@ -20,7 +20,6 @@ public class ReplanifierEntretien {
 
     private Entretien entretien;
 
-
     public ReplanifierEntretien(int IdEntretien, Calendar Date, int duree, int IdRecruter, int IdCandidat) {
         this.IdEntretien = IdEntretien;
         this.Date = Date;
@@ -30,22 +29,16 @@ public class ReplanifierEntretien {
     }
 
     public void execute() {
-
-
         EntretienRepositoryFake entretienRepositoryFake = new EntretienRepositoryFake();
         this.entretien = entretienRepositoryFake.getEntretienId(this.IdEntretien);
-
 
         ConsultantRecruterService consultantRecruterService = new ConsultantRecruterServiceFake();
         Recruteur recruteur = consultantRecruterService.getRecruterId(this.IdRecruter);
 
-
         CandidatRepositoryFake CandidatRepositoryFake = new CandidatRepositoryFake();
         Candidat candidat = CandidatRepositoryFake.getCandidatByID(this.IdCandidat);
 
-
         entretien.replanifierEntretien(entretien, candidat, recruteur, Date, duree);
-
 
     }
 
